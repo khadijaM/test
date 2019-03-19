@@ -1,8 +1,5 @@
 <?php
+require '../vendor/autoload.php';
 
-require 'app\Autoloader.php';
-
-Autoloader::register();
-$postManager = new PostManager();
-$post = new Post();
-?>
+$post = new App\model\Post();
+var_dump($post);
